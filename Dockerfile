@@ -1,2 +1,3 @@
 FROM scratch
-COPY js/jq-$TAG /bin/jq
+ARG TAG
+COPY ./jq/jq-$TAG /bin/jq
