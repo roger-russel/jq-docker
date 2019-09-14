@@ -2,16 +2,16 @@
 
 This JQ project was made with the Scratch image and the binary of JQ.
 
-The tag version are exactly version of JQ.
+The tag version is exactly version of JQ.
 
-The Dockerfile can be seen into my github project [https://github.com/roger-russel/jq-docker](https://github.com/roger-russel/jq-docker).
+The Dockerfile can be seen in my Github project [https://github.com/roger-russel/jq-docker](https://github.com/roger-russel/jq-docker).
 
-Not that default version doesn't have sh or bash into it. Which means that only jq will be acessible.
+Not that default version doesn't have sh or bash into it. Which means that only JQ will be accessible.
 
 ## Tags
 
 The current latest is 1.6.
-Tags with "-sh" are build with buzybox instead of scratch.
+Tags with "-sh" are build with Buzybox instead of scratch.
 
 * latest, latest-sh
 * 1.6, 1.6-sh
@@ -19,15 +19,15 @@ Tags with "-sh" are build with buzybox instead of scratch.
 
 ## Usages
 
-The command bellow show how to use jq into a file named test.json
+The command below shows how to use JQ into a file named test.json
 
-The trick is mount this file inside the container.
+The trick is to mount this file inside the container.
 
 ```sh
 docker run -v $(pwd)/test.json:/test.json rogerrussel/jq:latest jq '.' ./test.json
 ```
 
-If is desirable to not create a file then you must use an tag with bash, like the example bellow.
+It is possible to run dynamically the json object was can be seen below:
 
 ```sh
 docker run rogerrussel/jq:latest-sh sh -c 'echo "{\"foo\":\"bar\"}" | jq .'
