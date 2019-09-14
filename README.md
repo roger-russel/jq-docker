@@ -14,3 +14,10 @@ The trick is mount this file inside the container.
 ```sh
 docker run -v $(pwd)/test.json:/test.json rogerrussel/jq jq '.' ./test.json
 ```
+
+Now we have images with bash on it too, bash have only 1.3MB.
+The images with bash have "-sh" into the end of tag.
+
+```sh
+docker run rogerrussel/jq:latest-sh sh -c 'echo "{\"foo\":\"bar\"}" | jq .'
+```
