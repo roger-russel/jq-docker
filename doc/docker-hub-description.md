@@ -13,7 +13,7 @@ Not that default version doesn't have sh or bash into it. Which means that only 
 The current latest is 1.6.
 Tags with "-sh" are build with Buzybox instead of scratch.
 
-* latest, latest-sh
+* latest, latest-sh, latest-alpine
 * 1.6, 1.6-sh, 1.6-alpine
 * 1.5, 1.5-sh, 1.5-alpine
 
