@@ -14,8 +14,8 @@ The current latest is 1.6.
 Tags with "-sh" are build with Buzybox instead of scratch.
 
 * latest, latest-sh
-* 1.6, 1.6-sh
-* 1.5, 1.5-sh
+* 1.6, 1.6-sh, 1.6-alpine
+* 1.5, 1.5-sh, 1.5-alpine
 
 ## Usages
 
@@ -31,4 +31,10 @@ It is possible to run dynamically the json object was can be seen below:
 
 ```sh
 docker run rogerrussel/jq:latest-sh sh -c 'echo "{\"foo\":\"bar\"}" | jq .'
+```
+
+Or with alpine image:
+
+```sh
+docker run rogerrussel/jq:latest-alpine sh -c 'echo "{\"foo\":\"bar\"}" | jq .'
 ```

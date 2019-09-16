@@ -21,3 +21,9 @@ The images with bash have "-sh" into the end of tag.
 ```sh
 docker run rogerrussel/jq:latest-sh sh -c 'echo "{\"foo\":\"bar\"}" | jq .'
 ```
+
+Or with alpine image:
+
+```sh
+docker run rogerrussel/jq:latest-alpine sh -c 'echo "{\"foo\":\"bar\"}" | jq .'
+```
